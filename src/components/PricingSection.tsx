@@ -1,6 +1,7 @@
 import { Check, ChevronDown } from "lucide-react";
 import { motion } from "framer-motion";
-import GlowCard from "./GlowCard";
+
+const DISCORD_LINK = "https://discord.gg/renderbyte";
 
 const plans = [
   {
@@ -17,7 +18,7 @@ const plans = [
   },
   {
     name: "VPS Hosting",
-    image: "/images/lavalink.webp",
+    image: "/images/vps.png",
     popular: false,
     features: ["Full root access", "SSD storage", "99.9% uptime", "Multiple node options", "Backup included"],
   },
@@ -77,15 +78,20 @@ const PricingSection = () => {
                           </li>
                         ))}
                       </ul>
-                      <button className="no-underline group cursor-pointer relative shadow-lg shadow-zinc-900 rounded-full p-px font-semibold leading-6 text-foreground inline-block w-full rounded-lg mt-auto">
+                      <a
+                        href={DISCORD_LINK}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="no-underline group cursor-pointer relative shadow-lg shadow-zinc-900 rounded-full p-px font-semibold leading-6 text-foreground inline-block w-full rounded-lg mt-auto"
+                      >
                         <span className="absolute inset-0 overflow-hidden rounded-full">
-                          <span className="absolute inset-0 rounded-full bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(255,76,0,0.6)_0%,rgba(255,76,0,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+                          <span className="absolute inset-0 rounded-full bg-[image:radial-gradient(75%_100%_at_50%_0%,hsl(270_70%_72%_/_0.6)_0%,hsl(270_70%_72%_/_0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
                         </span>
-                        <div className="relative flex space-x-2 items-center z-10 rounded-full py-3 px-6 ring-1 ring-white/10 bg-zinc-950">
+                        <div className="relative flex space-x-2 items-center z-10 rounded-full py-3 px-6 ring-1 ring-white/10 bg-zinc-950 justify-center">
                           <span>Start Now</span>
                         </div>
                         <span className="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-transparent via-primary/90 to-transparent transition-opacity duration-500 group-hover:opacity-40" />
-                      </button>
+                      </a>
                     </div>
                   </div>
                 </div>
