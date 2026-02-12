@@ -45,7 +45,7 @@ const ExperienceSection = () => {
                 >
                   <div className="relative flex items-center p-5 rounded-[inherit] overflow-hidden">
                     <div
-                      className="absolute inset-0 bg-gradient-to-r from-[hsl(16,100%,20%)] to-transparent transition-opacity"
+                      className="absolute inset-0 bg-gradient-to-r from-[hsl(270,40%,20%)] to-transparent transition-opacity"
                       style={{ opacity: activeTab === i ? 1 : 0 }}
                     />
                     <div className="relative z-10 flex items-center w-full">
