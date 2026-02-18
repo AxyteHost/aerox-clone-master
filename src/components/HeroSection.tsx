@@ -1,5 +1,6 @@
+import { useState, useEffect } from "react";
 import { ArrowRight, ExternalLink, TerminalSquare, ShieldCheck, Clock, Headset } from "lucide-react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import GlowCard from "./GlowCard";
 import HeroButton from "./HeroButton";
 
@@ -10,7 +11,18 @@ const heroCards = [
   { icon: Headset, title: "24/7 Support", desc: "Expert help whenever you need it" },
 ];
 
+const rotatingTexts = ["Discord Bot", "Minecraft Server", "Hytale Server"];
+
 const HeroSection = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % rotatingTexts.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section className="relative flex flex-col items-center justify-center pt-32 pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
       <div className="absolute inset-0 z-0">
@@ -28,7 +40,20 @@ const HeroSection = () => {
           >
             <h2 className="text-4xl sm:text-5xl font-bold text-foreground leading-tight">
               Host your own<br />
-              <span className="text-gradient-blue h-20 block">Discord Bot</span>
+              <span className="h-20 block relative overflow-hidden">
+                <AnimatePresence mode="wait">
+                  <motion.span
+                    key={rotatingTexts[currentIndex]}
+                    className="text-gradient-blue absolute"
+                    initial={{ y: 40, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    exit={{ y: -40, opacity: 0 }}
+                    transition={{ duration: 0.4, ease: "easeInOut" }}
+                  >
+                    {rotatingTexts[currentIndex]}
+                  </motion.span>
+                </AnimatePresence>
+              </span>
             </h2>
             <p className="mt-4 text-lg text-muted-foreground max-w-lg">
               Experience lightning-fast performance, unbeatable reliability, and 24/7 support for all your favorite games and applications.
