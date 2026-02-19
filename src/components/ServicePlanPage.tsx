@@ -14,6 +14,7 @@ export interface Plan {
   disk?: string;
   features: string[];
   popular?: boolean;
+  buyLink?: string;
 }
 
 interface ServicePlanPageProps {
@@ -113,10 +114,10 @@ const ServicePlanPage = ({ title, subtitle, plans, showSpecs = false }: ServiceP
                     </ul>
 
                     <a
-                      href={BUY_LINK}
+                      href={plan.buyLink || BUY_LINK}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center justify-center gap-2 w-full py-3 rounded-lg border border-white/10 bg-secondary/50 text-foreground font-semibold text-sm hover:bg-primary hover:text-primary-foreground transition-colors mt-auto"
+                      className="group/btn relative flex items-center justify-center gap-2 w-full py-3 rounded-lg border border-white/10 bg-secondary/50 text-foreground font-semibold text-sm hover:bg-primary hover:text-primary-foreground hover:shadow-[0_0_20px_hsl(200_100%_55%_/_0.4)] hover:border-primary/60 active:shadow-[0_0_30px_hsl(200_100%_55%_/_0.6)] transition-all duration-300 mt-auto"
                     >
                       <ShoppingCart size={16} />
                       Buy Now
