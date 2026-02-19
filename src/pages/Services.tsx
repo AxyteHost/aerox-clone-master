@@ -8,14 +8,14 @@ const services = [
   {
     name: "Minecraft",
     image: "/images/mc.jpg",
-    price: "₹2.50",
+    price: "₹29.00",
     link: "/services/minecraft",
     available: true,
   },
   {
     name: "Discord Bot",
     image: "/images/discord.png",
-    price: "₹1.00",
+    price: "₹39.99",
     link: "/services/discord",
     available: true,
   },
