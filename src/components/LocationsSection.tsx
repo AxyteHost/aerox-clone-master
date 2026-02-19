@@ -25,7 +25,7 @@ const locations = [
   },
   {
     name: "India",
-    specs: "AMD Ryzen™ 9 5900X / Intel® Xeon®",
+    specs: "AMD EPYC™ 9634 / Intel® Xeon®",
     flag: (
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" className="w-8 h-8 rounded-full">
         <defs>
