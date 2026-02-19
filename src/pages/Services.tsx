@@ -69,7 +69,7 @@ const Services = () => {
               <span className="text-primary">Hosting</span>
             </h1>
             <p className="mt-4 text-lg text-muted-foreground">
-              Premium performance for your favorite games.
+              Premium performance for your servers.
             </p>
           </motion.div>
 
