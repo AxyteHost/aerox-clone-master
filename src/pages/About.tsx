@@ -41,7 +41,7 @@ const About = () => {
                 <li>
                   <strong className="text-foreground">Email:</strong>{" "}
                   <a href="mailto:support@renderbyte.com" className="text-primary hover:underline">
-                    support@renderbyte.com
+                    hello@renderbyte.site
                   </a>
                 </li>
                 <li>
