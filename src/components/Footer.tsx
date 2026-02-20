@@ -55,11 +55,11 @@ const Footer = () => {
             <div className="mt-6 space-y-1.5">
               <p className="text-muted-foreground text-xs flex items-start gap-1.5">
                 <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mt-0.5 shrink-0"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-                Mahadev Nagar Duttawadi, Nagpur 440023
+                Dattawadi, Nagpur 440023
               </p>
               <p className="text-muted-foreground text-xs flex items-center gap-1.5">
                 <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.16 6.16l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.02z"/></svg>
-                <a href="tel:+919022889115" className="hover:text-primary transition-colors">+91 9022889115</a>
+                <a href="tel:+919022889115" className="hover:text-primary transition-colors">+91 0000000000</a>
               </p>
             </div>
           </div>
